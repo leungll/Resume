@@ -1,0 +1,116 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{fontawesome5}
+\usepackage[AutoFakeBold=true, AutoFakeSlant=true]{xeCJK}
+
+\setCJKfamilyfont{Songti SC}[AutoFakeBold = {2.0}]{Songti SC}
+\newCJKfontfamily{\STHeiti}{STHeiti}
+\newCJKfontfamily{\STKaiti}{STKaiti}
+
+\renewcommand{\baselinestretch}{1.1}
+\hypersetup{hidelinks}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{\STHeiti{梁莉莉(Lili Liang)}}
+
+\basicInfo{
+    (86) 175-4399-9485
+    $\bullet$ \href{mailto:l.liang0316@gmail.com}{l.liang0316@gmail.com}
+    $\bullet$ \href{https://github.com/leungll}{GitHub} 
+    $\bullet$ \href{https://www.linkedin.com/in/l2liang}{LinkedIn}
+    $\bullet$ \href{https://leungll.site/about}{Homepage}
+}
+
+\section{教育经历}
+\datedsubsection{\textbf{\href{https://www.cmu.edu}{卡内基梅隆大学}}}{美国, 加利福尼亚州}
+\datedsubsection{Master of Science in Software Engineering}{2024.09 - 至今}
+
+\datedsubsection{\textbf{\href{https://www.nenu.edu.cn}{东北师范大学}}}{吉林, 长春}
+\datedsubsection{软件工程本科，均分: 88.16/100，排名：12/108（11\%）}{2017.09 -- 2021.06}
+
+% \section{论文发表}
+% \begin{itemize}
+%   \item Junping Zhou, Chumin Li, Yupeng Zhou, Mingyang Li, \textbf{Lili Liang}, and Jianan Wang, 
+%   ``Solving diversified top-k weight clique search problem'', 
+%   in \textbf{\href{https://link.springer.com/article/10.1007/s11432-020-3069-4}{\textit{Science China Information Sciences}}} 
+%   and \textbf{\href{https://hsi-workshop.github.io/hsi2020-website/program.html}{\textit{HSI 2020(conjunction with IJCAI 2020)}}}, 
+%   \href{https://hsi-workshop.github.io/hsi2020-website/hsi2020/Solving%20diversified%20top-k%20weight%20clique%20search%20problem%20with%20MaxSAT.pdf}{[PDF]}
+% \end{itemize}
+
+\section{技术能力}
+\textbf{编程语言}：\normalsize Golang, Java, C/C++, Python, JavaScript, HTML/CSS, SQL
+
+\textbf{技术框架与工具}：\normalsize Git, \LaTeX, RPC(Thrift), SpringBoot, MyBatis, RocketMQ, Redis, TensorFlow
+
+\section{工作经历}
+\datedsubsection{\href{https://www.bytedance.com}{\textbf{字节跳动} (TikTok, 抖音母公司)}}{广东, 深圳}
+\datedsubsection{\STKaiti {后台研发工程师，TikTok 电商履约中台 (全职)}}{2021.07 -- 2023.09}
+\begin{itemize}[parsep=0.3ex] \normalsize
+    \item \textbf{商家履约}：作为团队核心研发，支持商家履约多端能力建设，先后参与多个MVP项目、大型横向项目开发；见证业务日均订单量由
+    5.6w到1000w，日均GMV由5w USD到5100w USD的成长，为电商业务快速发展提供支撑；
+    \item \textbf{OpenAPI}：作为系统Owner，梳理历史架构、跟踪线上问题，发现16处历史bug并及时响应进行修复，完成多个系统能力优化和需
+    求上线；牵头制定接口变更规范，为ISV提供丰富的OpenAPI履约能力；
+    \item \textbf{稳定性建设}：作为系统Owner，负责业务问题排查工具、成功率看板的建设，牵头完成全链路工具上报SDK、数据清洗、全场景数
+    据看板等基建；
+    \item \textbf{工作成绩}：“超出预期”绩效晋升 (top 1\%)，国际电商 \textit{Spot Bonus} (突出工作表现，top 3\%)
+\end{itemize}
+
+\section{项目经历}
+\datedsubsection{\textbf{履约决策系统与配置SDK项目, 字节跳动}}{2022.09 -- 2022.11}
+\datedsubsection{\STKaiti {旨在设计一个能够封装业务决策逻辑、实现可配置、支持灰度发布机制和异常回滚的决策系统。}}{}
+\begin{itemize}[parsep=0.3ex] \normalsize
+    \item \textbf{规则引擎}：基于公司基础组件Dolphin，设计一个包含规则因子、规则表达策略与规则决策的规则引擎，旨在支持业务规则的差异化
+    处理与完成决策；
+    \item \textbf{规则管理}：考虑到MVP版本的最小成本实现，使用公司基础组件TCC代替传统存储组件MySQL进行规则配置，提供规则管理及读写能力；
+    \item \textbf{动作校验服务}: 设计动作校验服务，分别提供SDK、RPC两种接入方式，避免单点问题的出现；
+    \item \textbf{技术框架}：Golang、KiteX、MQ、Dolphin（规则引擎）、TCC（配置化组件），系统监控：Grafana；
+    \item \textbf{项目成果}：
+      \begin{itemize}
+        \item[$\circ$] 收敛商家履约业务决策逻辑，支持未来新规则的低成本接入
+        \item[$\circ$] 灰度上线3个月，接入决策SDK的QPS：1.1k，接入决策系统RPC服务的QPS：115（B端业务）
+      \end{itemize}
+\end{itemize}
+
+\section{研究经历}
+\datedsubsection{论文：\href{https://link.springer.com/article/10.1007/s11432-020-3069-4}{\textbf{Solving Diversified 
+Top-k Weight Clique Search Problem}}}{2020.07 -- 2020.09}
+\datedsubsection{\STKaiti {研究方向：算法求解}}{}
+\begin{itemize}[parsep=0.3ex] \normalsize
+    \item 文章提出2种解决多样化top-k加权团搜索（DTKWCS）问题的编码策略以及DTKWCS的2个具体实际应用；
+    \item 工作职能：
+        \begin{itemize}
+          \item[$\circ$] 独立实现论文直接编码、基于独立集划分的2种求解方式；
+          \item[$\circ$] 提出一种针对顶点拓展数量，进行对称压缩破坏的处理方法，提高软子句的求解效率；
+        \end{itemize}
+    \item 发表于JCR Q1区期刊：\textbf{\href{http://scis.scichina.com}{\textit{Science China Information Sciences}}}, 
+    会议：\textbf{\href{https://hsi-workshop.github.io/hsi2020-website/program.html}{\textit{HSI 2020(conjunction with IJCAI 2020)}}}；
+\end{itemize}
+
+\section{荣誉奖励}
+\begin{itemize}[parsep=0.2ex] \normalsize
+    \item 字节跳动TikTok国际电商 \textit{Spot Bonus} (突出工作表现，top 3\%) \hfill 2022
+    \item 东北师范大学一等奖学金、东北师范大学优秀学生、实践创新类奖学金(top 7\%)  \hfill 2021
+    \item 东北师范大学校长奖学金、东北师范大学优秀学生、年度“创新之星” (top 3\%)  \hfill 2020
+    % \item 蓝桥杯全国软件和信息技术专业人才大赛吉林赛区C/C++程序设计大学A组三等奖 \hfill 2020
+    \item 东北师范大学二等奖学金、东北师范大学优秀学生  \hfill 2019
+    \item （国家级）“全国高校绿色计算大赛”全国一等奖、团体一等奖（第1参加人）\hfill 2018
+\end{itemize}
+
+\section{技术博客}
+\begin{itemize}[parsep=0.3ex] \normalsize
+    \item \href{https://blog.csdn.net/liangllhahaha?type=blog}{[CSDN]}：输出\textbf{60+}篇算法、工程类技术博客, 
+    获得\textbf{57w+} 访问量；
+
+    \item \href{https://github.com/leungll}{[GitHub]}：
+    \href{https://github.com/leungll/NENU-Courses}{\faGithub \ \textbf{NENU-Courses}} 课程攻略开源项目发起者；
+
+    \item \href{https://leungll.site/archives}{[https://leungll.site]}：独自搭建的个人站点，站点双线部署于Github、Gitee；
+    基于JsDelivr搭建免费CDN，优化静态资源加载速度；应用站点流量分析工具；提交搜索引擎收录(SEO)。
+\end{itemize}
+
+\end{document}
