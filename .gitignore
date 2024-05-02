@@ -2,6 +2,5 @@
 *.log
 *.out
 *.swp
-*.pdf
 *.zip
 .DS_Store
