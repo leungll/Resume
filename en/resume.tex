@@ -15,118 +15,132 @@
 
 \basicInfo{
     (86) 175-4399-9485
-    $\bullet$ \href{mailto:l.liang0316@gmail.com}{l.liang0316@gmail.com} 
-    $\bullet$ \href{https://github.com/leungll}{GitHub} 
-    $\bullet$ \href{https://www.linkedin.com/in/l2liang}{LinkedIn}
-    $\bullet$ \href{https://leungll.site/about}{Homepage}
+    | \href{mailto:l2liang@cmu.edu}{l2liang@cmu.edu} 
+    | \href{https://github.com/leungll}{\faGithub \ leungll} 
+    | \href{https://www.linkedin.com/in/l2liang}{\faLinkedin \ l2liang}
+    | \href{https://leungll.site/about}{\faHome \ leungll.site}
 }
 
 \section{Education}
-\datedsubsection{\textbf{\href{https://www.cmu.edu}{Carnegie Mellon University}}}{Mountain View, CA} % todo 
-\datedsubsection{Master's degree, Master of Science in Software Engineering}{08/2024 -- now}
+\datedsubsection{\textbf{\href{https://www.cmu.edu}{Carnegie Mellon University}} (Incoming Student)}{Mountain View, CA} % todo 
+\datedsubsection{Master's degree, Master of Science in Software Engineering}{08/2024 -- 12/2025}
 
 \datedsubsection{\textbf{\href{https://en.nenu.edu.cn/}{Northeast Normal University}}}{Changchun, China}
-\datedsubsection{Bachelor's degree, B.Eng. in Software Engineering, Overall GPA: 88.16/100}{09/2017 -- 06/2021}
+\datedsubsection{Bachelor's degree, B.Eng. in Software Engineering}{09/2017 -- 06/2021}
+
+\section{Technical Skills}
+\textbf{Programming Languages:} Golang, Java, C/C++, SQL, Python, JavaScript, HTML/CSS, Markdown
+
+\textbf{Frameworks:} RPC(Thrift), RocketMQ, Kafka, SpringBoot, MyBatis, Node.js, Zookeeper
+
+\textbf{Databases:} MySQL, Redis, ElasticSearch, Hive, MongoDB
+
+\textbf{Tools and Services:} Linux, Git, \LaTeX, Swagger, Google Cloud Platform, Amazon Web Services, 
 
 \section{Work Experience}
-\datedsubsection{\href{https://www.bytedance.com/en}{\textbf{ByteDance} (TikTok's parent company)}}{Shenzhen, China}
-\datedsubsection{\textit{Backend Software Engineer, Full-Time, TikTok E-commerce Fulfillment Platform}}{07/2021 -- 10/2023}
+\datedsubsection{\href{https://www.bytedance.com/en}{\textbf{ByteDance} (Parent company of TikTok)}}{Shenzhen, China}
+\datedsubsection{\textit{Backend Software Engineer \textbf{Full-time}, TikTok E-commerce Fulfillment Group}}{07/2021 -- 10/2023}
 \begin{itemize}[parsep=0.2ex]
-    \item \textbf{Merchant Fulfillment}: supported the construction of the multi-end capabilities for merchant fulfillment 
-    as a core developer in the team; participated in various MVP and large-scale horizontal projects.
-    \item \textbf{OpenAPI}: reviewed the historical architecture, tracked online issues, identified and promptly addressed 
-    16 historical bugs; based on software development principles, took the lead in formulating interface change specifications.
-    \item \textbf{Stability Construction}: took responsibility for the construction of business issue troubleshooting tools and 
-    success rate dashboards; completed infrastructure projects, including the full-link tool reporting SDK, data cleaning, and 
-    full-scenario data dashboard, etc.
-    \item \textbf{Achievement}: 
+    \item \textbf{Merchant Fulfillment}: \textit{Core developer}. Supported the construction of the multi-end capabilities for 
+    merchant fulfillment and launched 23+ large and medium-sized projects. The business order volume has grown from 56k to 
+    10 million.
+    \item \textbf{OpenAPI}: \textit{Business owner}. Reviewed the historical architecture, tracked online issues, identified 
+    and promptly addressed 16 historical bugs. Based on software development principles, took the lead in formulating interface 
+    change specifications.
+    \item \textbf{Stability Construction}: \textit{Business owner}. Completed the basic construction of business problem 
+    troubleshooting tools, including the full-link tool reporting SDK, data cleaning, and full-scenario data dashboard, etc. 
+    For online problem solving, it saved 75\% of human resources (21 people to 5 people).
+    \item \textbf{Achievement}
       \begin{itemize}
-          \item[$\circ$] \textit{Exceed Expectation} Performance Promotion (top 1\%)
+          \item[$\circ$] \textbf{Annual performance appraisal: \textit{Exceed Expectation} and promoted} (top 1\%)
           \item[$\circ$] Global E-Commerce \textit{Spot Bonus} Award (Outstanding Job Performance, top 3\%)
       \end{itemize}
 \end{itemize}
 
 \section{Project Experience}
-\datedsubsection{\textbf{Fulfillment Decision System and Configuration SDK Project}, ByteDance}{09/2022 -- 11/2022}
-\datedsubsection{\textit{Aimed at designing a decision system that can encapsulate business decision logic, achieve configurability, 
-and support a gray release mechanism and abnormal rollback.}}{}
+\datedsubsection{\textbf{Fulfillment Decision System and Configuration SDK Project} @ByteDance}{09/2022 -- 11/2022}
+\datedsubsection{\textit{Project Owner. Technologies: Golang, KiteX, RocketMQ, SDK, RPC, Metrics, Grafana}}{}
 \begin{itemize}[parsep=0.2ex]
-    \item \textbf{Rule Engine}: focused on designing a rule engine that incorporates rule factors, rule expression strategies, 
-    and rule decisions, which is used for supporting the differential handling of business rules and facilitating decision-making.
-    \item \textbf{Rule Configuration}: considered the minimal cost of implementing the MVP version, opting to use the lightweight 
-    TCC components for rule-based configuration management.
-    \item \textbf{Action Verification Service}: designed an action verification service based on the rule engine, which could offer 
-    two integration methods, SDK and RPC, preventing single-point issues.
-    \item \textbf{Result}: 
-      \begin{itemize}
-          \item[$\circ$] converged merchant fulfillment business decision-making logic and supported the low-cost integration of 
-          new rules in the future.
-          \item[$\circ$] 3 months after being launched, access to SDK QPS: 1.1k, access to RPC QPS: 115 (B-side business).
-      \end{itemize}
+    \item Implemented an action decision system that can encapsulate business decision logic, achieve configurability, 
+    support grayscale release mechanism and exception rollback.
+    \item Converted 25 business rules into rule expressions in the MVP version and designed a rule engine to complete 
+    the logical calculation of the regular expression.
+    \item Used the company's basic component TCC to configure rules, provide rule management, and read and write 
+    capabilities. Completed the configuration management of business rules.
+    \item Designed an action verification service based on the rule engine, which could offer two integration methods, 
+    SDK and RPC, preventing single-point issues.
+    \item \textbf{Result}: 3 months after being launched, access to SDK QPS: 1.1k, access to RPC QPS: 115 (B-side business).
 \end{itemize}
 
-\section{Research}
-\datedsubsection{\textbf{Solving Diversified Top-k Weight Clique Search Problem}}{07/2020 -- 09/2020}
-\datedsubsection{\textit{Research direction: algorithm solution}}{}
-\begin{itemize}
-    \item Proposed two encoding strategies for solving the diversified top-k weight clique search (DTKWCS) problem and two specific 
-    practical applications of DTKWCS. 
-    \item Conducted experiments to show that our encoding strategies are competitive, allowing to promote the applications of the 
-    DTKWCS problem, such as community detection, spectrum sharing, advertising placement, etc.
-    \item \textbf{Published} in JCR Q1 journal: 
-    \textbf{\href{https://link.springer.com/article/10.1007/s11432-020-3069-4}{\textit{Science China Information Sciences}}}.
+\datedsubsection{\textbf{Fulfillment Oncall Tool Efficiency Improvement Project} @ByteDance}{12/2022 -- 03/2023}
+\datedsubsection{\textit{Project Owner. Technologies: Golang, KiteX, SDK, ElasticSearch, Hive, RocketMQ, Metrics, Grafana}}{}
+\begin{itemize}[parsep=0.2ex]
+    \item Abstracted the key actions in each business, classified key actions according to e-commerce scenarios, and designed 
+    common reporting business data for each key action.
+    \item Designed a general business data reporting SDK for low-cost access to business services. Pushed the reported data 
+    to ES via RocketMQ.
+    \item Exported ES data to the data analysis platform through Hive for PM and operations to perform data analysis.
+    \item \textbf{Result}: Based on the data reported by ES, SDE can quickly check the full-scenario data of the order based on the key ID. 
+    For online problem solving, it saved 75\% of human resources (21 people to 5 people).
 \end{itemize}
 
-\datedsubsection{\textbf{Research and Implementation of Community Friend Recommendation System Based on K-Plex}}{}
-\datedsubsection{\textit{Thesis Project \qquad Technologies: Vue. Js, SpringBoot, Redis, Shiro}}{12/2020 -- 04/2021}
-\begin{itemize}
-    \item Designed a heuristic search algorithm strategy for maximal enumeration of K-plex by improving the fast enumeration 
-    algorithm for large K-plex proposed by Conte et al. 
-    \item Conducted experiments to verify the effectiveness of the algorithm.
-    \item Achieved the architecture design and system implementation of the community friend recommendation system based on this 
-    algorithm model.
-\end{itemize}
+% \section{Research}
+% \datedsubsection{\textbf{Solving Diversified Top-k Weight Clique Search Problem}}{07/2020 -- 09/2020}
+% \datedsubsection{\textit{Research direction: algorithm solution}}{}
+% \begin{itemize}
+%     \item Proposed two encoding strategies for solving the diversified top-k weight clique search (DTKWCS) problem and two specific 
+%     practical applications of DTKWCS. 
+%     \item Conducted experiments to show that our encoding strategies are competitive, allowing to promote the applications of the 
+%     DTKWCS problem, such as community detection, spectrum sharing, advertising placement, etc.
+%     \item \textbf{Published} in JCR Q1 journal: 
+%     \textbf{\href{https://link.springer.com/article/10.1007/s11432-020-3069-4}{\textit{Science China Information Sciences}}}.
+% \end{itemize}
 
-\section{Technical Blog}
-\begin{itemize}
-    \item \href{https://blog.csdn.net/liangllhahaha?type=blog}{[CSDN]}: output \textbf{60+} algorithm and engineering technical 
-    blogs, got \textbf{570,000+} views.
+% \datedsubsection{\textbf{Research and Implementation of Community Friend Recommendation System Based on K-Plex}}{}
+% \datedsubsection{\textit{Thesis Project \qquad Technologies: Vue. Js, SpringBoot, Redis, Shiro}}{12/2020 -- 04/2021}
+% \begin{itemize}
+%     \item Designed a heuristic search algorithm strategy for maximal enumeration of K-plex by improving the fast enumeration 
+%     algorithm for large K-plex proposed by Conte et al. 
+%     \item Conducted experiments to verify the effectiveness of the algorithm.
+%     \item Achieved the architecture design and system implementation of the community friend recommendation system based on this 
+%     algorithm model.
+% \end{itemize}
 
-    \item \href{https://github.com/leungll}{[GitHub]}：
-    \href{https://github.com/leungll/NENU-Courses}{\faGithub \ \textbf{NENU-Courses}} course guide open source project initiator.
+% \section{Technical Blog}
+% \begin{itemize}
+%     \item \href{https://blog.csdn.net/liangllhahaha?type=blog}{[CSDN]}: output \textbf{60+} algorithm and engineering technical 
+%     blogs, got \textbf{570,000+} views.
 
-    \item \href{https://leungll.site/about}{[Personal Blog Site]}: Blog website built by myself.
-    \begin{itemize}
-      \item[$\circ$] Deployed the site in two lines; built CDN based on JsDelivr to optimize resource loading speed; 
-      applied site traffic analysis tools; implemented search engine inclusion (SEO).
-    \end{itemize}
-\end{itemize}
+%     \item \href{https://github.com/leungll}{[GitHub]}：
+%     \href{https://github.com/leungll/NENU-Courses}{\faGithub \ \textbf{NENU-Courses}} course guide open source project initiator.
 
-\section{Awards and Honors}
-\begin{itemize}
-    \item \textit{Exceed Expectation} Performance Promotion, ByteDance (top 1\%) \hfill 2023
-    \item Global E-Commerce \textit{Spot Bonus} Award, ByteDance (Outstanding Job Performance, top 3\%) \hfill 2022
-    \item First Prize Scholarship, Outstanding Student Award, Practical Innovation Scholarship(top 7\%) \hfill 2021
-    \item \textit{Innovation Star} Award, NorthEast Normal University(top 3\%) \hfill 2020
-    \item President Scholarship, Outstanding Student Award (top 5\%) \hfill 2020
-    % \item C/C++ Programming Competition, University Group A, Jilin Division of the National Software 
-    % and Information Technology Talent Competition - Third Prize \hfill 2020
-    % \item Second Prize Scholarship, Outstanding Student Award \hfill 2019
-    \item First Prize and Team First Prize in the ``National University Green Computing Competition" (top 1\%) \hfill 2018
-\end{itemize}
+%     \item \href{https://leungll.site/about}{[Personal Blog Site]}: Blog website built by myself.
+%     \begin{itemize}
+%       \item[$\circ$] Deployed the site in two lines; built CDN based on JsDelivr to optimize resource loading speed; 
+%       applied site traffic analysis tools; implemented search engine inclusion (SEO).
+%     \end{itemize}
+% \end{itemize}
 
-\section{Publications} % todo
-\begin{itemize}
-    \item Junping Zhou, Chumin Li, Yupeng Zhou, Mingyang Li, \textbf{Lili Liang}, and Jianan Wang, 
-    ``Solving diversified top-k weight clique search problem'', 
-    in \textbf{\href{https://link.springer.com/article/10.1007/s11432-020-3069-4}{\textit{Science China Information Sciences}}} 
-    and \textbf{\href{https://hsi-workshop.github.io/hsi2020-website/program.html}{\textit{HSI 2020(conjunction with IJCAI 2020)}}}, 
-    \href{https://hsi-workshop.github.io/hsi2020-website/hsi2020/Solving%20diversified%20top-k%20weight%20clique%20search%20problem%20with%20MaxSAT.pdf}{[PDF]}
-\end{itemize}
+% \section{Awards and Honors}
+% \begin{itemize}
+%     \item \textit{Exceed Expectation} Performance Promotion, ByteDance (top 1\%) \hfill 2023
+%     \item Global E-Commerce \textit{Spot Bonus} Award, ByteDance (Outstanding Job Performance, top 3\%) \hfill 2022
+%     \item First Prize Scholarship, Outstanding Student Award, Practical Innovation Scholarship(top 7\%) \hfill 2021
+%     \item \textit{Innovation Star} Award, NorthEast Normal University(top 3\%) \hfill 2020
+%     \item President Scholarship, Outstanding Student Award (top 5\%) \hfill 2020
+%     % \item C/C++ Programming Competition, University Group A, Jilin Division of the National Software 
+%     % and Information Technology Talent Competition - Third Prize \hfill 2020
+%     % \item Second Prize Scholarship, Outstanding Student Award \hfill 2019
+%     \item First Prize and Team First Prize in the ``National University Green Computing Competition" (top 1\%) \hfill 2018
+% \end{itemize}
 
-\section{Skills}
-\textbf{Programming Languages:} Golang, Java, C/C++, Python, JavaScript, HTML/CSS, SQL(ranked by proficiency)
-
-\textbf{Tools and Frameworks:} Git, \LaTeX, RPC(Thrift), SpringBoot, MyBatis, RocketMQ, Redis, TensorFlow
+% \section{Publications} % todo
+% \begin{itemize}
+%     \item Junping Zhou, Chumin Li, Yupeng Zhou, Mingyang Li, \textbf{Lili Liang}, and Jianan Wang, 
+%     ``Solving diversified top-k weight clique search problem'', 
+%     in \textbf{\href{https://link.springer.com/article/10.1007/s11432-020-3069-4}{\textit{Science China Information Sciences}}} 
+%     and \textbf{\href{https://hsi-workshop.github.io/hsi2020-website/program.html}{\textit{HSI 2020(conjunction with IJCAI 2020)}}}, 
+%     \href{https://hsi-workshop.github.io/hsi2020-website/hsi2020/Solving%20diversified%20top-k%20weight%20clique%20search%20problem%20with%20MaxSAT.pdf}{[PDF]}
+% \end{itemize}
 
 \end{document}
